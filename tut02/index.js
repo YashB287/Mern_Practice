@@ -4,8 +4,36 @@ import path from 'path' */
 
 /* Common module way */
 const fsPromises = require('fs').promises;
+const { throws } = require('assert');
 const path = require('path');
 
+/* Better way to write code and avoid callback hell. */
+
+const fileOps = async() => {
+    try{
+
+        /* Then we don't the callback here that has the (err, data) because we are using await
+        catching the error below using catch block.*/
+
+        const data = await fsPromises.readFile(path.join(__dirname, 'Files', 'starter.txt'), 'utf8');
+        console.log(data); 
+
+        await fsPromises.unlink(path.join(__dirname, 'Files', 'starter.txt'));
+        await fsPromises.writeFile(path.join(__dirname, 'Files', 'promiseWrite.txt'), data);
+        await fsPromises.appendFile(path.join(__dirname, 'Files', 'promiseWrite.txt'),'\n Haye ni tera koka!');
+        await fsPromises.rename(path.join(__dirname, 'Files', 'promiseWrite.txt'), path.join(__dirname, 'Files', 'promiseComplete.txt'));
+
+        const newData = await fsPromises.readFile(path.join(__dirname, 'Files', 'promiseComplete.txt'), 'utf8');
+        console.log(newData);
+
+
+    }catch(err){
+        console.error(err);
+    } 
+    
+}
+
+fileOps();
 
 // Converting data which is buffer mode to string using data.toString
 
@@ -22,11 +50,11 @@ parameter so we don't need toString() function */
     console.log(data);
 }); */
 
-fs.readFile(path.join(__dirname, 'Files', 'starter.txt'), 'utf8', (err, data) => {
+/* fs.readFile(path.join(__dirname, 'Files', 'starter.txt'), 'utf8', (err, data) => {
     if(err) throw err;
     console.log(data);
 });
-
+ */
 
 /* This nesteing of multiple functions is done to avoid async nature of nodejs. We have nested 
 the functions in our desired order to get our output in sequential way.
@@ -57,7 +85,7 @@ printed first because it will take time to read data from starter file and by it
 nodejs will not wait so it will do other available task and will come back to print data from starter 
 file */
 
-console.log("Yash Bhaiya ki jai.");
+/* console.log("Yash Bhaiya ki jai."); */
 
 // exit on uncaught errors
 // we listen for this uncaughtException using process 
