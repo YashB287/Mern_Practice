@@ -1,0 +1,10 @@
+20231223	22:26:49 	5c6dc40e-eb01-499c-b95b-5b0f5bfdda0b	/new-page	GET
+20231223	22:26:49 	5186ef48-73f7-4ca2-b0d1-aa0393ebb09b	/css/style.css	GET
+20231223	22:26:49 	20fb8131-6adb-4dbc-8320-4b41a79e3751	/img/Devprayag.jpg	GET
+20231223	22:26:49 	0a83866f-9f04-46b3-aeed-66859601db06	/favicon.ico	GET
+20231223	22:29:30 	a2ed1ee7-1784-4af5-b249-fa27a6b35bc0	/new-page	GET
+20231223	22:30:42 	43a20f25-e097-4c51-b85d-f7594ff85799	/new-page	GET
+20231223	22:30:42 	f8def8cd-efd1-4a00-ae8c-74c8c991b3d1	/css/style.css	GET
+20231223	22:30:42 	d658468a-4f14-4d01-9b0b-95fa61f1cea4	/img/Devprayag.jpg	GET
+20231223	22:31:00 	c848f535-fe96-484c-abf2-1576f75ca237	/	GET
+20231223	22:31:00 	3307e4d5-9f66-4ca7-ac22-ab275e16a1e3	/css/style.css	GET
