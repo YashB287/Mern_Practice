@@ -1,0 +1,22 @@
+{
+  "name": "tut07",
+  "version": "1.0.0",
+  "description": "middleware practice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node mid_server",
+    "dev": "nodemon mid_server ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yash",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "date-fns": "^3.0.5",
+    "express": "^4.18.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
