@@ -122,8 +122,9 @@ app.get('/chain(.html)?', [one, two, three]);
     will globally apply the middleware to all requests made to your app. Like app.use, it is 
     also possible to specify a path for which the middleware should be applied.
 
-    app.all also accepts a regex as its path parameter. app.use does not accept a regex, but will
-    automatically match all routes that extend the base route.
+    app.all also accepts a regex as its path parameter. app.use does not accept regex in older
+    version(but supports in newer version) but will automatically match all routes that extend 
+    the base route.
     
     https://bambielli.com/til/2016-12-27-app-use-app-all/
 */
