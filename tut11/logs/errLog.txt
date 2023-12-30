@@ -5,3 +5,6 @@
 2023-12-25	17:54:27 	61853029-0f8d-4925-aae2-0a857b52a830	Error: ENOENT: no such file or directory, stat '/home/yash/MERN_Practice/tut08/views/ subdir/index.html'
 2023-12-25	17:56:48 	c79db429-089e-48b5-8c93-0b68c32ca8b0	Error: ENOENT: no such file or directory, stat '/home/yash/MERN_Practice/tut08/views/ subdir/test.html'
 2023-12-29	21:33:47 	49a03bab-6260-4fbc-b999-ef6a5dcb47dd	ReferenceError: refreshToken is not defined
+2023-12-30	22:24:38 	86d678a1-33db-441c-b1ac-a203bb80e058	TypeError: Cannot read properties of undefined (reading 'origin')
+2023-12-30	22:26:10 	d8e99309-6c10-45c7-a598-ff23a12e854f	ReferenceError: whitelist is not defined
+2023-12-30	22:26:34 	2d6ad28c-d1fc-43c2-885e-faa2eae7b399	ReferenceError: whitelist is not defined

@@ -6,6 +6,7 @@ const corsOptions = require('./config/corsOptions');
 const express = require('express');
 const verifyJWT = require('./middleware/verifyJWT');
 const cookieParser = require('cookie-parser');
+const credentials = require('./middleware/credentials');
 
 
 
@@ -13,6 +14,12 @@ const app = express()
 const PORT = process.env.PORT || 3500;
 
 app.use(logger);
+
+/*
+    Handle options credentials check - before CORS!
+    and fetch cookies credentials requirement
+*/
+app.use(credentials);
 
 app.use(cors(corsOptions));
 app.use(express.urlencoded({extended : false}));
